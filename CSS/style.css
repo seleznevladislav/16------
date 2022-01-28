@@ -31,6 +31,9 @@ h1{
 	display: flex;
 	justify-content: space-between;
 }
+.header-div > img{
+	padding-top: 10px;
+}
 nav{
 	width: 521px;
 }
@@ -40,10 +43,10 @@ nav{
 	list-style: none;
 	font-weight: 400;
 	margin: 0px;
-	padding-top: 10px;
+	padding-top: 8px;
 }
 li:not(:nth-child(4)){
-	padding-top: 12px;
+	padding-top: 14px;
 }
 #header-button{
 	max-width: 177px;
@@ -54,9 +57,9 @@ li:not(:nth-child(4)){
 	display: inline-block;
 	color: var(--header-color);
 	background-color: var(--button-text-color);
-  padding: .5em 1em;
+  padding: .8em 1em;
   outline: none;
-  border: 2px solid;
+  border: 1px solid black;
   border-radius: 6px;
   transition: 0.2s;
 	font-weight: 300;
@@ -107,7 +110,7 @@ a{
 	background-color: var(--button-text-color);
   padding: 1.1em 1.2em;
   outline: none;
-  border: 2px solid;
+  border: 1px solid black;
   border-radius: 6px;
   transition: 0.2s;
 }
@@ -115,3 +118,9 @@ a{
 	vertical-align: middle;
 	padding-right: 10px;
 }
+a.button:hover { 
+	background: linear-gradient(#0856af, #0c2542) #55779e; 
+	box-shadow: 1px 1px 5px black;
+}
+a.button:active { 
+	background: linear-gradient(#154780, #0856af) #85a0be; }
