@@ -10,6 +10,7 @@ body{
 	font-size: 14px;
 	font-weight: 300;
 	margin: 0px;
+	background-color: var(--primary-color);
 }
 a{
 	color: var(--button-text-color);
@@ -72,9 +73,6 @@ li:not(:nth-child(4)){
 a{
 	text-decoration: none;
 }
-.main{
-	background-color: var(--primary-color);
-}
 .top-section{
 	max-width: 95%;
 	margin: 0 auto;
@@ -123,4 +121,13 @@ a.button:hover {
 	box-shadow: 1px 1px 5px black;
 }
 a.button:active { 
-	background: linear-gradient(#154780, #0856af) #85a0be; }
+	background: linear-gradient(#154780, #0856af) #85a0be; 
+}
+@media screen and (max-width: 1200px) {
+	.img-div img{	max-width: 359px; max-height: 300px;}
+	h1{font-size: 35px; margin: 10px 0px;}
+	.company-description{padding: 0px 20px; max-width: 400px;}
+	.company-description p{line-height: 120%; font-size: 15px;}
+	.company-description a{font-size: 10px;}
+	.company-description img{width: 10px;}
+}
